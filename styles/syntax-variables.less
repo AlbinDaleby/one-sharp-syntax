@@ -15,11 +15,11 @@
 @syntax-invisible-character-color: @syntax-guide;
 
 // For find and replace markers
-@syntax-result-marker-color:          @syntax-fg;
+@syntax-result-marker-color:          fade(@syntax-accent, 24%);
 @syntax-result-marker-color-selected: @syntax-accent;
 
 // Gutter colors
-@syntax-gutter-text-color:                darken(@syntax-fg, 26%);
+@syntax-gutter-text-color:                @syntax-gutter;
 @syntax-gutter-text-color-selected:       @syntax-fg;
 @syntax-gutter-background-color:          @syntax-bg; // unused
 @syntax-gutter-background-color-selected: lighten(@syntax-bg, 2%);
@@ -49,7 +49,6 @@
 // Don't use in packages
 
 @syntax-cursor-line: hsla(@syntax-hue, 100%,  80%, .04); // needs to be semi-transparent to show serach results
-@syntax-bracket-matcher-background-color: lighten(@syntax-background-color, 6%);
 
 @syntax-deprecated-fg: darken(@syntax-color-modified, 50%);
 @syntax-deprecated-bg: @syntax-color-modified;
